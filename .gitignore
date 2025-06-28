@@ -1,0 +1,41 @@
+node_modules/
+*.local
+# Firebase files
+.firebase/
+.firebaserc
+firebase-debug.log
+firebase-debug.*.log
+*.local
+
+# Firebase Functions (exclude node_modules but keep source code)
+functions/lib/  # Compiled JS (if using TypeScript)
+functions/node_modules/
+
+
+# Node.js
+node_modules/
+package-lock.json
+package-back.js
+
+# Environment variables
+.env
+.env.local
+
+# Build directories
+dist/
+build/
+
+# IDE & OS files
+.DS_Store
+.idea/
+.vscode/
+
+# Logs
+*.log
+public-debug.log
+hosting.*.log
+hosting.*.jdbc-debug.log
+
+# Misc
+*.tmp
+*.bak

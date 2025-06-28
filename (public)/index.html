@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitTrack App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <h1>🏋‍♂ FitTrack</h1>
+
+    <section id="auth-section">
+      <h2>Login / Signup</h2>
+      <input type="email" id="email" placeholder="Email" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="login()">Login</button>
+      <button onclick="signup()">Sign Up</button>
+    </section>
+
+    <section id="dashboard" style="display: none;">
+      <div class="user-bar">
+        <span>👤 <strong id="user-email"></strong></span>
+        <button onclick="logout()">Logout</button>
+      </div>
+
+      <div class="card">
+        <h2>Add Workout</h2>
+        <input type="text" id="type" placeholder="Workout Type (e.g. Running)" />
+        <input type="number" id="duration" placeholder="Duration (minutes)" />
+        <input type="date" id="date" />
+        <button onclick="addWorkout()">Add Workout</button>
+      </div>
+
+      <div class="card">
+        <h2>🏃‍♀ Your Workouts</h2>
+        <ul id="workout-list"></ul>
+        <div id="badge"></div>
+      </div>
+    </section>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
